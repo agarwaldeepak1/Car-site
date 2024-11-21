@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Shoot Booking</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+        <h1>Photo Shoot Booking</h1>
+        <nav>
+            <ul>
+                <li><a href="#book">Book a Shoot</a></li>
+                <li><a href="#prices">View Prices</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="book">
+        <h2>Book a Shoot</h2>
+        <form id="booking-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="type">Type of Shoot:</label>
+            <input type="text" id="type" name="type" required>
+            
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section id="prices">
+        <h2>Price List</h2>
+        <ul id="price-list">
+            <!-- Prices will be dynamically added here -->
+        </ul>
+    </section>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
